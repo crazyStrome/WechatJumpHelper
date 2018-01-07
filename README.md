@@ -7,6 +7,8 @@
 本文介绍了Java版的微信跳一跳辅助外挂实现过程，使用了openCV的图形匹配代码，目前只匹配1920x1080屏幕，代码见[github-crazyStrome](https://github.com/crazyStrome/WechatJumpHelper)
 ，仅供学习使用。
 
+![成果](https://cdn-std.dprcdn.net/files/acc_615569/Eg6SRN)
+
 ## 思路
 
 *  使用adb截取Android设备的屏幕，并上传到电脑上去
