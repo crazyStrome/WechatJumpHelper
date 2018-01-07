@@ -261,9 +261,9 @@ adb shell input swipe x1 y1 x2 y2 time
 
 我们看两张图片：
 
-![1](https://cdn-std.dprcdn.net/files/acc_615569/YoPiJv)
+![1](https://cdn-std.dprcdn.net/files/acc_615569/krWoWp)
 
-![1](https://cdn-std.dprcdn.net/files/acc_615569/Ggh5Vb)
+![2](https://cdn-std.dprcdn.net/files/acc_615569/wNG3Zq)
 
 可以看到，两条线的斜率绝对值是差不多相等的，现在知道了中心的横坐标，就很容易根据斜率求得y坐标：
 
