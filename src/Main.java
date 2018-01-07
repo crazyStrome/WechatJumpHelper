@@ -1,7 +1,7 @@
+
 import org.opencv.core.*;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
-
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
@@ -88,7 +88,7 @@ public class Main {
                         + ", BoardX: " + boardX + ", BoardY: " + boardY);
                 double jumpDistance = helper.computeJumDistance(chessX, chessY, boardX, boardY);
                 helper.doJump(jumpDistance);
-                TimeUnit.MILLISECONDS.sleep(20);
+                TimeUnit.MILLISECONDS.sleep(1000);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
@@ -211,7 +211,7 @@ public class Main {
                     if (Math.abs(x - chessX) < chessWidth / 2) {
                         continue;
                     }
-                    if ((Math.abs(pixelR - lastPixelR) + Math.abs(pixelG - lastPixelG) + Math.abs(pixelB - lastPixelB)) > 10) {
+                    if ((Math.abs(pixelR - lastPixelR) + Math.abs(pixelG - lastPixelG) + Math.abs(pixelB - lastPixelB)) > 50) {
                         boardXSum += x;
                         boardXCount ++;
                     }
