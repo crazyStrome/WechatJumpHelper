@@ -257,6 +257,33 @@ adb shell input swipe x1 y1 x2 y2 time
     }
 ```
 
+### 通过上顶点坐标获取跳板中心坐标
+
+我们看两张图片：
+
+![1](https://cdn-std.dprcdn.net/files/acc_615569/YoPiJv)
+
+![1](https://cdn-std.dprcdn.net/files/acc_615569/Ggh5Vb)
+
+可以看到，两条线的斜率绝对值是差不多相等的，现在知道了中心的横坐标，就很容易根据斜率求得y坐标：
+
+```
+boardY = chessY - Math.abs(boardX - chessX) *
+   Math.abs(boardY1 - boardY2) / Math.abs(boardX1 - boardX2);
+```
+
+其中：
+
+```
+    //两个跳板出现的中心位置，用来计算角度，获得跳板的Y坐标
+    private final int boardX1 = 813;
+    private final int boardY1 = 1122;
+    private final int boardX2 = 310;
+    private final int boardY2 = 813;
+```
+
+自己可以在图片中获得。
+
 ### 通过坐标获取距离，然后获取按压时间
 
 勾股定理获取距离：
