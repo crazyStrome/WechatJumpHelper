@@ -9,6 +9,22 @@
 
 ![成果](https://cdn-std.dprcdn.net/files/acc_615569/Eg6SRN)
 
+## 如何使用
+
+我来教大家如何使用已经打包好的jar打高分，这个jar只能辅助1920x1080的屏幕。
+
+先去这个地址下载[所需文件](https://github.com/crazyStrome/WechatJumpHelper/tree/master/1920x1080-64%E4%BD%8D),下载该文件夹下的所有文件。
+其中的opencv_java331.dll是opencv在64位机器上的本地库，如果你是32位电脑，可以下载opencv的安装包，安装教程如下:[传送门](https://jingyan.baidu.com/article/22a299b5cad4a49e18376a7b.html)
+安装完成后，打开.\build\java\x86的文件夹，里面有个opencv_java331.dll就是x86电脑要用的文件。
+
+把这个opencv_java331.dll文件复制到C:\Windows\System32目录下。
+
+运行这个jar文件需要在电脑装上JRE，见如下教程：[传送门](http://blog.csdn.net/u012934325/article/details/73441617)
+
+安装完成后，查看下面的ADB指令相关内容，使得电脑可以调试手机。
+
+双击WechatHelper.bat，脚本开始运行。
+
 ## 思路
 
 *  使用adb截取Android设备的屏幕，并上传到电脑上去
