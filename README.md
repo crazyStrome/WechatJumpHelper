@@ -125,9 +125,9 @@ adb shell screencap -p /sdcard/screenshot.png
 
 *  adb将截图上传到电脑:
 
-···
+```
 adb pull /sdcard/screenshot.png .
-···
+```
 
 * adb模拟手指点击x、y为横纵坐标：
 
